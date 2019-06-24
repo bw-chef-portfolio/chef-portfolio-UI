@@ -13,6 +13,8 @@
   align-items: center;
 }
 .container-nav .nav-hamburger-clicked a {
+  text-decoration: none;
+  color: white;
   padding: 7px;
 }
 .container-nav .navbar {
