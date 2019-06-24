@@ -1,3 +1,49 @@
-@import "../LESS/mixins.less";
-@import "../LESS/variable.less";
-@import "../LESS/index.less";
+.container-nav {
+  padding: 0;
+  margin: 0;
+  color: seashell;
+  background-color: #f73b3b;
+  border: 2px outset #f62222;
+}
+.container-nav .navbar {
+  display: flex;
+}
+.container-nav .nav-logo {
+  width: 50%;
+}
+.container-nav .nav-logo h1 {
+  padding-left: 5%;
+}
+.container-nav .nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.container-nav .nav-links .nav-hamburger {
+  transform: rotate(90deg);
+}
+.container-nav .nav-links .nav-hamburger #stick {
+  padding: 2px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.container-nav a:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 500px) {
+  .container-nav .nav-hamburger {
+    transform: rotate(90deg);
+    display: flex;
+  }
+  .container-nav .nav-hamburger #stick {
+    display: none;
+    padding: 2px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}

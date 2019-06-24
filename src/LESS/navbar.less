@@ -1,0 +1,54 @@
+.container-nav{
+    padding: 0;
+    margin: 0;
+    color: @chefOffWhite;
+    background-color: @chefRed;
+    border: 2px  outset darken(@chefRed, 5);
+    .navbar{
+        display: flex;
+    }
+    .nav-logo{
+        width: 50%;
+        h1{
+           
+           padding-left: 5%;
+        }
+    }
+
+    .nav-links{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+        .nav-hamburger{
+            transform: rotate(90deg);
+
+            #stick{
+                padding: 2px;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+       
+    }
+    a:hover{
+        cursor: pointer;
+    }
+    
+}
+@media screen and (min-width: 500px)
+{
+    .container-nav{
+
+        .nav-hamburger{
+            transform: rotate(90deg);
+            display: flex;
+            #stick{
+                display: none;
+                padding: 2px;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
