@@ -1,26 +1,34 @@
 class Carousel {
     constructor(element) {
      this.element = element;
-     this.images = document.querySelectorAll(".carousel-images");
+     this.imagesSlide = document.querySelectorAll(".carousel-images");
      this.currentIndex = 0;
-     this.currentImg = this.images[this.currentIndex];
-     this.currentImg.style.display = "block";
-     this.next();
+     this.change();
+     setTimeout(() => this.change(), 4000);   
+     
 
      };
-     next() {
-        const images = document.querySelectorAll('.carousel-images');
+     change() {
+        const images = document.querySelectorAll('.carousel-img');
         images.forEach((image) => {
-            image.style.display = "none"});
-            this.currentIndex +=1;
-            // if(this.currentIndex > 3) {
-            //     this.currentIndex = 0;
-            // }
-            this.images[this.currentIndex].style.display = "block";
+            image.style.display = "none"
+        });
         
-    };
+        if (this.currentIndex > images.length) {
+            this.currentIndex = 1
+        }
+        // if (this.currentIndex = images.length-1) {
+        //     this.currentIndex = 0;
+        // }
+        
+        images[this.currentIndex].style.display = "block";
+        this.currentIndex++;
+        
+      
+       
+    } 
 
 
-}
-  
+
+}  
 let carousel = document.querySelectorAll('.carousel').forEach(img => new Carousel(img));

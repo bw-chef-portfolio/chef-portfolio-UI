@@ -3,7 +3,6 @@
 }
 .carousel {
   width: 80%;
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,10 +16,6 @@
   .carousel {
     width: 1200px;
   }
-}
-.carousel .click-content {
-  color: red;
-  display: none;
 }
 .carousel img {
   width: 100%;
