@@ -1,3 +1,28 @@
-@import "../LESS/mixins.less";
-@import "../LESS/variable.less";
-@import "../LESS/index.less";
+* {
+  box-sizing: border-box;
+}
+.carousel {
+  width: 80%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .carousel {
+    width: 1200px;
+  }
+}
+.carousel .click-content {
+  color: red;
+  display: none;
+}
+.carousel img {
+  width: 100%;
+  display: none;
+}
