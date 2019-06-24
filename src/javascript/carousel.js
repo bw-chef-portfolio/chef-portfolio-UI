@@ -22,5 +22,5 @@ class Carousel {
 
 
 }
-
+  
 let carousel = document.querySelectorAll('.carousel').forEach(img => new Carousel(img));
