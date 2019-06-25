@@ -2,33 +2,44 @@ class Carousel {
     constructor(element) {
      this.element = element;
      this.imagesSlide = document.querySelectorAll(".carousel-images");
+     this.imagesOne = document.querySelectorAll(".carousel-img");
+     this.content = document.querySelectorAll(".click-content");
      this.currentIndex = 0;
      this.change();
-     setTimeout(() => this.change(), 4000);   
-     
+    
+    
 
      };
      change() {
         const images = document.querySelectorAll('.carousel-img');
+        const newImagesArray = [];
         images.forEach((image) => {
-            image.style.display = "none"
+            image.style.display = "none";
+            newImagesArray.push(image);
+            return this.currentIndex;
+        });
+        const timer = setTimeout(() => this.change(this.currentIndex), 5000); 
+        document.querySelectorAll(".carousel-img").forEach((image) => {
+          image.addEventListener("mouseover", ()  => {
+            clearInterval(timer);
+            }); 
+            image.addEventListener("mouseleave", () => {
+                setTimeout(() => this.change(this.currentIndex), 2000);
+            });
+          
         });
         
-        if (this.currentIndex > images.length) {
-            this.currentIndex = 1
+        
+        if (this.currentIndex == newImagesArray.length) {
+            this.currentIndex = 0;
         }
-        // if (this.currentIndex = images.length-1) {
-        //     this.currentIndex = 0;
-        // }
         
-        images[this.currentIndex].style.display = "block";
-        this.currentIndex++;
-        
-      
-       
+        newImagesArray[this.currentIndex].style.display = "block";
+           this.currentIndex += 1;
+    
+          
     } 
-
-
-
+    
+    
 }  
-let carousel = document.querySelectorAll('.carousel').forEach(img => new Carousel(img));
+let carousel = document.querySelectorAll('.carousel-images').forEach(img => new Carousel(img));

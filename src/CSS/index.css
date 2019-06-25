@@ -17,6 +17,9 @@
     width: 1200px;
   }
 }
+.carousel .click-content {
+  display: none;
+}
 .carousel img {
   width: 100%;
   display: none;
