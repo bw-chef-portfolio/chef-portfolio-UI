@@ -68,6 +68,13 @@ a {
 .navt {
   display: none !important;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
 .about-article {
   border: 1px outset white;
   background-color: white;
@@ -169,6 +176,7 @@ body {
 >>>>>>> 4b850dcf37b84ed7e9a3220022fcceadb645884c
   padding: 0px;
   margin: 0px;
+  background-color: seashell;
 }
 .carousel {
   width: 80%;
