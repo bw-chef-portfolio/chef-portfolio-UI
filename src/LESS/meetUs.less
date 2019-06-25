@@ -1,0 +1,55 @@
+.accordion {
+   width: 80%;
+   margin: auto;
+   display: flex;
+   flex-direction: column; 
+   
+   h1{ 
+       text-align: center;
+       font-size: 2rem;
+   }
+
+   .panel {
+       display: flex;
+       margin: auto;
+       padding: 30px; 
+       border: 2px solid black;
+       width: 50%;
+
+       .panel-bar {
+           display: flex;
+           flex-direction: column;  
+           align-items: center;
+           margin: auto;
+       }
+       
+
+       .panel-buttons {
+           .button {
+               cursor: pointer; 
+               display: flex;
+
+           }
+
+           .hide-button{
+               display: none;
+           }
+       }
+       .panel-content {
+            display: none;
+
+         .showContent {
+            display: block;
+         }
+         .h3 {
+             font-size: 2rem;
+         }
+         .person-img {
+           width: 300px;
+           height: 300px; 
+           border-radius: 50%;
+       }
+     
+       }
+   }  
+}
