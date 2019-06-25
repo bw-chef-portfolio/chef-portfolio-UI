@@ -17,10 +17,10 @@
     width: 1200px;
   }
 }
-.carousel .click-content {
-  display: none;
-}
-.carousel img {
+.carousel .carousel-img {
   width: 100%;
+  position: none;
+}
+.carousel .click-content {
   display: none;
 }
