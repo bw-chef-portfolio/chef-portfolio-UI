@@ -9,6 +9,15 @@ class Navbar{
             this.hamburgerClicked.classList.toggle("navt");
             console.log(this.hamburgerClicked)
        })
+       window.addEventListener("resize", () => {
+           if (window.matchMedia("(max-width: 668px)").matches){
+               
+               if(!this.hamburgerClicked.classList.contains("navt")){
+                this.hamburgerClicked.classList.toggle("navt")
+               }
+           }
+       })
+      
 
     }
 }
