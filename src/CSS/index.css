@@ -68,6 +68,13 @@ a {
 .navt {
   display: none !important;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
 .about-article {
   position: relative;
   text-align: center;
@@ -91,8 +98,85 @@ a {
 }
 body {
   background-color: seashell;
+}
+.meet-us {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.meet-us h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.meet-us .panel {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 30px;
+  background-color: #f7863b;
+  border: 4px solid #ad2929;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px;
+  width: 70%;
+  height: 100%;
+}
+.meet-us .panel .panel-bar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+}
+.meet-us .panel .panel-bar .panel-buttons .button {
+  cursor: pointer;
+}
+.meet-us .panel .panel-bar .panel-buttons .hide-button {
+  display: none;
+}
+.meet-us .panel .panel-content {
+  display: none;
+}
+.meet-us .panel .panel-content .panel-style {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  width: 100%;
+}
+.meet-us .panel .panel-content .panel-style .h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+.meet-us .panel .panel-content .panel-style .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  width: 50%;
+}
+.meet-us .panel .panel-content .panel-style .information .links {
+  display: flex;
+}
+.meet-us .panel .panel-content .panel-style .person-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  align-content: flex-end;
+  padding: 10px;
+}
+.meet-us .panel .showContent {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+body {
   padding: 0px;
   margin: 0px;
+  background-color: seashell;
 }
 .carousel {
   width: 80%;
@@ -107,7 +191,7 @@ body {
 }
 @media (min-width: 1200px) {
   .carousel {
-    width: 1200px;
+    margin-top: 30px;
   }
 }
 .carousel .carousel-img {
