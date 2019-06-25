@@ -1,102 +1,139 @@
 body {
-    background-color: seashell;
+  background-color: seashell;
+  height: 100%;
+//   font-size: 62.5%;
 }
 
 .meet-us {
-   width: 80%;
-   margin: auto;
-   display: flex;
-   flex-direction: column; 
-   
-   h1{ 
-       text-align: center;
-       font-size: 2rem;
-   }
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 
-   .panel {
-       display: flex;
-       flex-direction: column;
-       margin: auto;
-       padding: 30px; 
-       background-color: @chefYellow;
-       border: 4px solid @chefBrown;
-       border-radius: 10px; 
-       box-shadow: 5px 10px 10px; 
-       width: 70%;
-       height: 100%; 
-       
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
 
-       .panel-bar {
-           display: flex;
-           flex-flow: row;  
-           justify-content: space-between;
-           height: 50px; 
-           width: 100%;
-          
-           .panel-buttons {
-              
-            .button {
-                cursor: pointer; 
-            }
-            .hide-button{
-                display: none;
-            }
-       }
+  .panel {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: @chefYellow;
+    border: 4px solid @chefBrown;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px;
+    width: 70%;
+    height: 100%;
+
+    @media (min-height: 1200px) {
+        padding-top: 10px;
+    }
+
+    &:hover {
+        background-color: @chefBrown;
+        color: seashell;
+        border: 4px solid @chefYellow
+    }
+
+    .panel-bar {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-evenly;
+      height: 50px;
+      width: 100%;
+
     
-       }
-       .panel-content {
-            display: none;
-            
-            .panel-style {
-                display: flex;
-                flex-flow: row;
-                justify-content: space-evenly;
-                padding-top: 30px;
-                width: 100%;
-               
 
-                
-                .h3 {
-                    font-size: 2rem;
-                    text-align: center;
-                    font-family: 'Lobster', cursive;
-                }
+      .name {
+        font-size: 2rem;
+        display: flex;
+        align-self: center;
 
-                .information {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    // justify-content: center;
-                    padding: 10px; 
-                    width: 50%;
-
-                    .links {
-                        display: flex;
-                        
-                    }
-                    
-                }
-
-       
-                .person-img {
-                  width: 300px;
-                  height: 300px; 
-                  border-radius: 50%;
-                  display: flex; 
-                  align-content: flex-end;
-                  padding: 10px; 
-                  
-
-                }
-            }
-       }    
-
-         .showContent {
-            display: block;
-         }
-    
-       
+        @media (min-height: 1000px) {
+           font-size: 1.6rem;
+        }
+      }
      
-        
-   }  
+      
+      h4 {
+        font-size: 1.6rem;
+        display: flex;
+        align-self: center;
+
+        @media (min-height: 1000px) {
+            font-size: 1.4rem;
+         }
+      }
+
+      .panel-buttons {
+        .button {
+          cursor: pointer;
+        }
+        .hide-button {
+          display: none;
+        }
+      }
+    }
+    .panel-content {
+      display: none;
+
+      .panel-style {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        width: 100%;
+
+        @media (max-height: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .information {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          // justify-content: center;
+          padding: 10px;
+          width: 50%;
+
+          .links {
+            display: flex;
+            justify-content: flex-end;
+
+            @media (max-height: 1200px) {
+                justify-content: center;
+                
+            }
+          }
+
+          p {
+            font-size: 1.2rem;
+
+            @media (max-height: 1000px) {
+                font-size: 1.2rem;
+             }
+          }
+        }
+
+        .person-img {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          display: flex;
+          align-content: flex-end;
+          padding: 10px;
+        }
+      }
+    }
+
+    .showContent {
+      display: block;
+    }
+  }
 }

@@ -1,3 +1,10 @@
+.footer {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
 a {
   text-decoration: none;
   color: white;
@@ -68,12 +75,128 @@ a {
 .navt {
   display: none !important;
 }
-
-.footer {
+body {
+  background-color: seashell;
+  height: 100%;
+}
+.meet-us {
+  width: 80%;
+  margin: auto;
   display: flex;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
+  flex-direction: column;
+}
+.meet-us h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.meet-us .panel {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+  background-color: #f7863b;
+  border: 4px solid #ad2929;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px;
+  width: 70%;
+  height: 100%;
+}
+@media (min-height: 1200px) {
+  .meet-us .panel {
+    padding-top: 10px;
+  }
+}
+.meet-us .panel:hover {
+  background-color: #ad2929;
+  color: seashell;
+  border: 4px solid #f7863b;
+}
+.meet-us .panel .panel-bar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+}
+.meet-us .panel .panel-bar .name {
+  font-size: 2rem;
+  display: flex;
+  align-self: center;
+}
+@media (min-height: 1000px) {
+  .meet-us .panel .panel-bar .name {
+    font-size: 1.6rem;
+  }
+}
+.meet-us .panel .panel-bar h4 {
+  font-size: 1.6rem;
+  display: flex;
+  align-self: center;
+}
+@media (min-height: 1000px) {
+  .meet-us .panel .panel-bar h4 {
+    font-size: 1.4rem;
+  }
+}
+.meet-us .panel .panel-bar .panel-buttons .button {
+  cursor: pointer;
+}
+.meet-us .panel .panel-bar .panel-buttons .hide-button {
+  display: none;
+}
+.meet-us .panel .panel-content {
+  display: none;
+}
+.meet-us .panel .panel-content .panel-style {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  width: 100%;
+}
+@media (max-height: 1200px) {
+  .meet-us .panel .panel-content .panel-style {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.meet-us .panel .panel-content .panel-style .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  width: 50%;
+}
+.meet-us .panel .panel-content .panel-style .information .links {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-height: 1200px) {
+  .meet-us .panel .panel-content .panel-style .information .links {
+    justify-content: center;
+  }
+}
+.meet-us .panel .panel-content .panel-style .information p {
+  font-size: 1.2rem;
+}
+@media (max-height: 1000px) {
+  .meet-us .panel .panel-content .panel-style .information p {
+    font-size: 1.2rem;
+  }
+}
+.meet-us .panel .panel-content .panel-style .person-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  align-content: flex-end;
+  padding: 10px;
+}
+.meet-us .panel .showContent {
+  display: block;
 }
 .about-article {
   border: 1px outset white;
@@ -95,85 +218,8 @@ a {
 }
 body {
   background-color: seashell;
-}
-.meet-us {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-.meet-us h1 {
-  text-align: center;
-  font-size: 2rem;
-}
-.meet-us .panel {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 30px;
-  background-color: #f7863b;
-  border: 4px solid #ad2929;
-  border-radius: 10px;
-  box-shadow: 5px 10px 10px;
-  width: 70%;
-  height: 100%;
-}
-.meet-us .panel .panel-bar {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  height: 50px;
-  width: 100%;
-}
-.meet-us .panel .panel-bar .panel-buttons .button {
-  cursor: pointer;
-}
-.meet-us .panel .panel-bar .panel-buttons .hide-button {
-  display: none;
-}
-.meet-us .panel .panel-content {
-  display: none;
-}
-.meet-us .panel .panel-content .panel-style {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-evenly;
-  padding-top: 30px;
-  width: 100%;
-}
-.meet-us .panel .panel-content .panel-style .h3 {
-  font-size: 2rem;
-  text-align: center;
-  font-family: 'Lobster', cursive;
-}
-.meet-us .panel .panel-content .panel-style .information {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-  width: 50%;
-}
-.meet-us .panel .panel-content .panel-style .information .links {
-  display: flex;
-}
-.meet-us .panel .panel-content .panel-style .person-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  display: flex;
-  align-content: flex-end;
-  padding: 10px;
-}
-.meet-us .panel .showContent {
-  display: block;
-}
-* {
-  box-sizing: border-box;
-}
-body {
   padding: 0px;
   margin: 0px;
-  background-color: seashell;
 }
 .carousel {
   width: 80%;
