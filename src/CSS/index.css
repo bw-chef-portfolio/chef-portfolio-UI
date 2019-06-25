@@ -155,7 +155,15 @@ body {
   color: white;
   height: 400px;
 }
-.about-article img {
+.about-article .img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(90%);
+  opacity: 1;
+  margin-bottom: 20px;
+}
+.about-article .img2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -163,9 +171,40 @@ body {
 /* Centered text */
 .about-us {
   position: absolute;
+  font-size: 0.9rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.about-why {
+  color: black;
+  position: absolute;
+  background-color: white;
+  box-shadow: 1px 1px 10px black;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: -75px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px dashed black;
+}
+.about-button {
+  position: absolute;
+  margin-top: -59px;
+  width: 100%;
+  height: 50px;
+}
+.about-button button {
+  background-color: #f73b3b;
+  border-color: #f73b3b;
+  border-radius: 10px;
+  font-size: 20px;
+  color: black;
+  width: 50%;
+  height: 100%;
+}
+.about-button button:hover {
+  cursor: pointer;
 }
 * {
   box-sizing: border-box;
@@ -174,6 +213,18 @@ body {
   background-color: seashell;
   padding: 0px;
   margin: 0px;
+}
+h1,
+button {
+  font-family: 'Lobster', cursive;
+}
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: 'Mali', cursive;
 }
 .carousel {
   width: 80%;
