@@ -10,8 +10,6 @@ class Navbar{
             console.log(this.hamburgerClicked)
        })
 
-        
-    
     }
 }
 let navigationBar = new Navbar(document.querySelector(".container-nav"));
