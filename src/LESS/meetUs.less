@@ -1,4 +1,8 @@
-.accordion {
+body {
+    background-color: seashell;
+}
+
+.meet-us {
    width: 80%;
    margin: auto;
    display: flex;
@@ -11,45 +15,88 @@
 
    .panel {
        display: flex;
+       flex-direction: column;
        margin: auto;
        padding: 30px; 
-       border: 2px solid black;
-       width: 50%;
+       background-color: @chefYellow;
+       border: 4px solid @chefBrown;
+       border-radius: 10px; 
+       box-shadow: 5px 10px 10px; 
+       width: 70%;
+       height: 100%; 
+       
 
        .panel-bar {
            display: flex;
-           flex-direction: column;  
-           align-items: center;
-           margin: auto;
+           flex-flow: row;  
+           justify-content: space-between;
+           height: 50px; 
+           width: 100%;
+          
+           .panel-buttons {
+              
+            .button {
+                cursor: pointer; 
+            }
+            .hide-button{
+                display: none;
+            }
        }
-       
-
-       .panel-buttons {
-           .button {
-               cursor: pointer; 
-               display: flex;
-
-           }
-
-           .hide-button{
-               display: none;
-           }
+    
        }
        .panel-content {
             display: none;
+            
+            .panel-style {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-evenly;
+                padding-top: 30px;
+                width: 100%;
+               
+
+                
+                .h3 {
+                    font-size: 2rem;
+                    text-align: center;
+                    font-family: 'Lobster', cursive;
+                }
+
+                .information {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    // justify-content: center;
+                    padding: 10px; 
+                    width: 50%;
+
+                    .links {
+                        display: flex;
+                        
+                    }
+                    
+                }
+
+       
+                .person-img {
+                  width: 300px;
+                  height: 300px; 
+                  border-radius: 50%;
+                  display: flex; 
+                  align-content: flex-end;
+                  padding: 10px; 
+                  
+
+                }
+            }
+       }    
 
          .showContent {
             display: block;
          }
-         .h3 {
-             font-size: 2rem;
-         }
-         .person-img {
-           width: 300px;
-           height: 300px; 
-           border-radius: 50%;
-       }
+    
+       
      
-       }
+        
    }  
 }

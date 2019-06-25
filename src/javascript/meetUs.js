@@ -1,27 +1,49 @@
-class Person {
-    constructor(element) {
-        this.element = element; 
-        this.elementContent = this.element.querySelector(".panel-content");
-        this.elementButtons = this.element.querySelector('.panel-buttons');
-        this.elementButtonClose = this.element.querySelector('.panel-button-close');
-        this.elementButtonOpen = this.element.querySelector('.panel-button-open');
+// class Person {
+//     constructor(element) {
+//         this.element = element; 
+//         this.content = element.querySelector(".panel-content");
+//         this.buttons = this.element.querySelector('.panel-buttons');
+//         this.buttonClose = this.element.querySelector('.panel-button-close');
+//         this.buttonOpen = this.element.querySelector('.panel-button-open');
 
-        this.elementButtons.addEventListener('click', () => {
-            this.changeButton();
-        });
+//         this.buttonOpen.addEventListener('click', () => this.changeButton());
+//         this.buttonClose.addEventListener('click', () => this.changeButton());
        
         
-    }
+//     }
 
+//     changeButton() {
+//         this.content.classList.toggle(".showContent");
+//         this.buttonOpen.classList.toggle("hide-button");
+//         this.buttonClose.classList.toggle("hide-button");
+       
+//     }
+
+// }
+
+// const together = document.querySelectorAll('.panel');
+// together.forEach(panel => new Person(panel));
+
+
+class Person {
+    constructor(element) {
+      this.element = element;
+      this.openButton = element.querySelector('.panel-button-open')
+      this.closeButton = element.querySelector('.panel-button-close')
+      this.panelContent = element.querySelector('.panel-content')
+     
+      this.openButton.addEventListener('click', () => this.changeButton());
+      this.closeButton.addEventListener('click', () => this.changeButton());  
+    }
+   
     changeButton() {
-        this.elementButtonClose.classList.toggle("hide-button");
-        this.elementButtonOpen.classList.toggle("hide-button");
-        this.elementContent.classList.toggle("showContent");
+      this.panelContent.classList.toggle('showContent')
+      this.closeButton.classList.toggle('hide-button');
+      this.openButton.classList.toggle('hide-button');
     }
-
-}
-
-const panelsTogether = document.querySelectorAll('.panel').forEach((panel) => {
-    return new Person(panel);
-})
-
+  }
+  
+  const together = document.querySelectorAll('.panel')
+  together.forEach(panel => new Person(panel))
+ 
+  
