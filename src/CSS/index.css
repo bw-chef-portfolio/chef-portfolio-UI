@@ -67,6 +67,13 @@ a {
 .navt {
   display: none !important;
 }
+.footer {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
 body {
   padding: 0px;
   margin: 0px;
