@@ -74,7 +74,7 @@ a {
   align-items: center;
   margin: 20px;
   padding: 20px;
-  border: 1px solid black;
+}
 .about-article {
   border: 1px outset white;
   background-color: white;
@@ -95,7 +95,6 @@ a {
 }
 body {
   background-color: seashell;
-<<<<<<< HEAD
 }
 .meet-us {
   width: 80%;
@@ -172,8 +171,6 @@ body {
   box-sizing: border-box;
 }
 body {
-=======
->>>>>>> 4b850dcf37b84ed7e9a3220022fcceadb645884c
   padding: 0px;
   margin: 0px;
   background-color: seashell;
