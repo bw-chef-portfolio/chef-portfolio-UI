@@ -262,7 +262,7 @@ body {
 /* Centered text */
 .about-us {
   position: absolute;
-  font-size: 0.9rem;
+  font-size: 1rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
