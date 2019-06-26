@@ -1,10 +1,3 @@
-.footer {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid black;
-}
 a {
   text-decoration: none;
   color: white;
@@ -75,10 +68,6 @@ a {
 .navt {
   display: none !important;
 }
-
-
-
-
 .container-nav-btm {
   background-color: #fab384;
 }
@@ -90,7 +79,6 @@ a {
   color: black;
   border: 0;
 }
-
 body {
   background-color: seashell;
   height: 100%;
@@ -236,7 +224,7 @@ body {
 /* Centered text */
 .about-us {
   position: absolute;
-  font-size: 0.9rem;
+  font-size: 1rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -270,20 +258,6 @@ body {
 }
 .about-button button:hover {
   cursor: pointer;
-
-  border: 1px outset white;
-  background-color: white;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-top: 25px;
-  margin-top: 30px;
-}
-.about-article h1 {
-  text-align: center;
-}
-.about-article p {
-  padding-left: 50px;
-  padding-right: 50px;
 }
 * {
   box-sizing: border-box;
@@ -292,7 +266,6 @@ body {
   background-color: seashell;
   padding: 0px;
   margin: 0px;
-
 }
 h1,
 button {
