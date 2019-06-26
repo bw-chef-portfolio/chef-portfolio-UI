@@ -4,10 +4,16 @@ class Person {
     this.openButton = element.querySelector(".panel-button-open");
     this.closeButton = element.querySelector(".panel-button-close");
     this.panelContent = element.querySelector(".panel-content");
+    this.footer = element.querySelector('.container-meetUs');
 
     this.openButton.addEventListener("click", () => {
       
       this.changeButton();
+<<<<<<< HEAD
+=======
+      TweenMax.to(".panel", 1, { y: 100 });
+      
+>>>>>>> 0026b93a3b7451073454b30779b63faa0514a68b
       
     });
     this.closeButton.addEventListener("click", () => {
@@ -16,12 +22,17 @@ class Person {
     });
   }
 
+
   changeButton() {
     
     this.panelContent.classList.toggle("showContent");
     this.closeButton.classList.toggle("hide-button");
     this.openButton.classList.toggle("hide-button");
   }
+
+  // marginShift() {
+  //   this.footer.classList.toggle("marginAdded")
+  // }
 
 }
 
