@@ -73,11 +73,18 @@ a {
 }
 .container-nav-btm .navbar {
   display: flex;
-  justify-content: center;
   padding: 0px;
   margin-left: 35%;
   color: black;
   border: 0;
+}
+@media screen and (max-width: 300px) {
+  .container-nav .nav-logo {
+    width: 70%;
+  }
+  .container-nav .nav-logo h1 {
+    margin-right: 130px;
+  }
 }
 body {
   background-color: seashell;
@@ -296,6 +303,45 @@ body {
 }
 .about-button button:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 300px) {
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .about-button {
+    margin-top: -25px;
+  }
+  .about-button button {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 200px) {
+  p {
+    font-size: 8px;
+  }
+  h1 {
+    font-size: 10px;
+  }
+  .about-button {
+    height: 20px;
+    margin-top: -15px;
+  }
+  .about-button button {
+    width: 100%;
+    font-size: 10px;
+  }
 }
 .bodyImage {
   background-image: url(../assets/Background-images/landingpageimage.jpeg);
