@@ -99,6 +99,11 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+@media (max-width: 720px) {
+  .meetUsPage {
+    background-image: none;
+  }
+}
 .meet-us {
   width: 100%;
   margin: auto;
@@ -247,6 +252,11 @@ body {
   align-content: flex-end;
   padding: 10px;
 }
+@media (max-width: 350px) {
+  .meet-us .panel .panel-content .panel-style .person-img {
+    width: 100%;
+  }
+}
 .meet-us .panel .showContent {
   display: block;
 }
@@ -307,13 +317,6 @@ body {
 .about-button button:hover {
   cursor: pointer;
 }
-.bodyImage {
-  background-image: url(../assets/Background-images/landingpageimage.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
 .frontEndLink {
   display: flex;
   justify-items: center;
@@ -328,9 +331,19 @@ body {
   border-radius: 5px;
   box-shadow: 5px 10px 10px;
 }
+@media (max-width: 420px) {
+  .frontEndLink {
+    width: 100%;
+  }
+}
 .frontEndLink h2 {
   font-size: 2rem;
   text-align: center;
+}
+@media (max-width: 420px) {
+  .frontEndLink h2 {
+    font-size: 1.4rem;
+  }
 }
 .frontEndLink .buttonsLogin {
   display: flex;
@@ -343,6 +356,16 @@ body {
   padding: 5px;
   color: black;
   background-color: #fab384;
+  box-shadow: 5px 5px 10px;
+}
+.frontEndLink .buttonsLogin .button:hover {
+  background-color: black;
+  color: #79ca72;
+}
+@media (max-width: 420px) {
+  .frontEndLink .buttonsLogin .button {
+    font-size: 1rem;
+  }
 }
 * {
   box-sizing: border-box;
@@ -368,7 +391,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }
