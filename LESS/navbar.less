@@ -4,9 +4,10 @@ a{
     padding: 7px;
 }
 .container-nav{
+    
     .nav-hamburger-clicked{
      
-        height: 100px;        
+        height: 120px;        
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -100,6 +101,13 @@ a{
     display: none !important;
 }
 
+
+@media screen and (max-width: 300px){
+    .container-nav{
+        .nav-logo{
+            width:70%;
+            h1{
+
 .container-nav-btm {
     background-color: lighten(@chefYellow, 15);
     .navbar {
@@ -112,5 +120,9 @@ a{
         // position:fixed;
 
 
-  }
-}
+
+                margin-right: 130px;
+            }
+        }
+    }
+   }
