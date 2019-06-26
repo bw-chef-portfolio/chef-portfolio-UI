@@ -1,22 +1,19 @@
-// .bodyImage {
-//  background-image: url();
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-attachment: fixed;
-// }
 
+
+
+
+// Below is the sign in style
 .frontEndLink {
   display: flex;
   justify-items: center;
   flex-direction: column;
-  width: 400px;
-  margin: 20px auto 40px auto;
+  width: 100%;
+  margin: 0px auto 40px auto;
   padding: 10px 10px 30px 10px;
-  background-image: url(../assets/LoginConnectImage/signinbuttonimg.jpeg);
+  background-image: url(../assets/LoginConnectImage/signinbuttonunedited.jpeg);
   background-color: @chefBrown;
   background-position: center;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 5px;
   box-shadow: 5px 10px 10px;
 
@@ -61,3 +58,51 @@
     }
   }
 }
+
+
+// Info on the landing Page
+.landing-page-info{
+  border:1px solid black;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  // margin-left: 10px;
+  // margin-right: 10px;
+  height: 100px;
+  margin-top: -100px;
+  p{
+    padding-left: 10px;
+    padding-right: 10px;
+    color:white;
+    opacity: 1
+  }
+
+
+}
+@media screen and (max-width: 300px){
+  p{
+    font-size: 12px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  
+ }
+ @media screen and (max-width: 500px){
+   p{
+     font-size: 12px;
+   }
+   h1{
+     font-size: 20px;
+   }
+  
+  }
+  @media screen and (max-width: 200px){
+   p{
+     font-size: 8px;
+   }
+   h1{
+     font-size: 10px;
+   }
+   
+  }
