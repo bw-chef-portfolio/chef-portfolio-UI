@@ -1,3 +1,13 @@
+.container-btm {
+  background-color: #fab384;
+  position: fixed;
+  padding: 0px;
+  margin: auto;
+  color: black;
+  border: 1px solid red;
+  left: 0;
+  bottom: 0;
+}
 a {
   text-decoration: none;
   color: white;
