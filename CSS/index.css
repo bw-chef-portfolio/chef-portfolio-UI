@@ -327,10 +327,11 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.frontEndLink .buttonsLogin button {
+.frontEndLink .buttonsLogin .button {
   font-size: 1.2rem;
   border-radius: 5px;
   padding: 5px;
+  color: black;
   background-color: #fab384;
 }
 * {
