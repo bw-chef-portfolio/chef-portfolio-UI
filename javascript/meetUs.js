@@ -6,16 +6,18 @@ class Person {
     this.panelContent = element.querySelector(".panel-content");
 
     this.openButton.addEventListener("click", () => {
+      
       this.changeButton();
-      TweenMax.to(".panel", 1, { y: 100 });
+      
     });
     this.closeButton.addEventListener("click", () => {
       this.changeButton();
-      TweenMax.to(".panel", 1, { y: 0 });
+      
     });
   }
 
   changeButton() {
+    
     this.panelContent.classList.toggle("showContent");
     this.closeButton.classList.toggle("hide-button");
     this.openButton.classList.toggle("hide-button");
