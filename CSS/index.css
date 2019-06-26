@@ -1,12 +1,34 @@
 .container-btm {
   background-color: #fab384;
-  position: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 5px;
+  color: black;
+  bottom: 0;
+  width: 100%;
+}
+.container-btm .container-btm-inner {
+  position: absolute;
+  bottom: 0;
+  background-color: #fab384;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container-meetUs {
+  background-color: #fab384;
+  position: static;
+  display: flex;
+  justify-content: center;
   padding: 0px;
   margin: auto;
+  margin-top: 100px;
   color: black;
-  border: 1px solid red;
   left: 0;
   bottom: 0;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -81,9 +103,6 @@ a {
 @media screen and (max-width: 300px) {
   .container-nav .nav-logo {
     width: 70%;
-  }
-  .container-nav .nav-logo h1 {
-    margin-right: 130px;
   }
 }
 body {
@@ -257,6 +276,9 @@ body {
 .meet-us .panel .showContent {
   display: block;
 }
+.marginAdded {
+  margin-top: 50px;
+}
 .about-article {
   position: relative;
   text-align: center;
@@ -298,7 +320,7 @@ body {
 }
 .about-button {
   position: absolute;
-  margin-top: -59px;
+  margin-top: -70px;
   width: 100%;
   height: 50px;
 }
@@ -330,7 +352,7 @@ body {
     font-size: 20px;
   }
   .about-button {
-    margin-top: -25px;
+    margin-top: -55px;
   }
   .about-button button {
     width: 100%;
@@ -346,31 +368,24 @@ body {
   }
   .about-button {
     height: 20px;
-    margin-top: -15px;
+    margin-top: -45px;
   }
   .about-button button {
     width: 100%;
     font-size: 10px;
   }
 }
-.bodyImage {
-  background-image: url(../assets/Background-images/landingpageimage.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
 .frontEndLink {
   display: flex;
   justify-items: center;
   flex-direction: column;
-  width: 400px;
-  margin: 20px auto 40px auto;
+  width: 100%;
+  margin: 0px auto 40px auto;
   padding: 10px 10px 30px 10px;
-  background-image: url(../assets/LoginConnectImage/signinbuttonimg.jpeg);
+  background-image: url(../assets/LoginConnectImage/signinbuttonunedited.jpeg);
   background-color: #ad2929;
   background-position: center;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 5px;
   box-shadow: 5px 10px 10px;
 }
@@ -410,10 +425,62 @@ body {
     font-size: 1rem;
   }
 }
+.landing-page-info {
+  border: 1px solid black;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  height: 100px;
+  margin-top: -100px;
+}
+.landing-page-info p {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  opacity: 1;
+}
+@media screen and (max-width: 300px) {
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 200px) {
+  p {
+    font-size: 8px;
+  }
+  h1 {
+    font-size: 10px;
+  }
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .carousel-img {
+  width: 100%;
+  position: none;
+  object-fit: cover;
+}
 * {
   box-sizing: border-box;
 }
-body {
+body,
+html {
   background-color: seashell;
   padding: 0px;
   margin: 0px;
@@ -429,17 +496,4 @@ h5,
 p,
 a {
   font-family: "Mali", cursive;
-}
-.carousel {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.carousel .carousel-img {
-  width: 100%;
-  position: none;
-  object-fit: cover;
 }
