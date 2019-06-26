@@ -1,10 +1,10 @@
-.bodyImage {
-  background-image: url(../assets/Background-images/landingpageimage.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
+// .bodyImage {
+//  background-image: url();
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-attachment: fixed;
+// }
 
 .frontEndLink {
   display: flex;
@@ -20,9 +20,18 @@
   border-radius: 5px;
   box-shadow: 5px 10px 10px;
 
+  @media (max-width: 420px) {
+      width: 100%;
+      
+  }
+
   h2 {
     font-size: 2rem;
     text-align: center;
+
+    @media (max-width: 420px) {
+       font-size: 1.4rem;
+    }
   }
 
   .buttonsLogin {
@@ -30,12 +39,25 @@
     flex-direction: row;
     justify-content: space-evenly;
 
+
     .button {
       font-size: 1.2rem;
       border-radius: 5px;
       padding: 5px;
       color: black;
       background-color: lighten(@chefYellow, 15);
+      box-shadow: 5px 5px 10px; 
+      
+
+      &:hover {
+        background-color:black;
+        color: #79ca72;
+    
+    }
+
+      @media (max-width: 420px) {
+        font-size: 1.0rem;
+     }
     }
   }
 }
