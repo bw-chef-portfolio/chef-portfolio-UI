@@ -68,16 +68,6 @@ a {
 .navt {
   display: none !important;
 }
-.container-nav-btm {
-  background-color: #fab384;
-}
-.container-nav-btm .navbar {
-  display: flex;
-  padding: 0px;
-  margin-left: 35%;
-  color: black;
-  border: 0;
-}
 @media screen and (max-width: 300px) {
   .container-nav .nav-logo {
     width: 70%;
