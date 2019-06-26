@@ -1,21 +1,23 @@
 .carousel {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
+    
     height: 500px;
     overflow: hidden;
-    margin: auto;
-    @media(min-width: 1200px){
-       margin-top: 30px; 
-      }
+    
+    
+    
    
 
     .carousel-img {
         width: 100%;
         position: none;
+        border-radius: 10px;
+        box-shadow: 5px 10px 10px;
+        object-fit: cover;
       }
     .click-content {
        display: none;
