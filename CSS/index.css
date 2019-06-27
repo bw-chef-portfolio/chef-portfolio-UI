@@ -30,6 +30,18 @@
   bottom: 0;
   width: 100%;
 }
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  margin: 10px;
+  padding-left: 10px;
+}
+.icons img {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
 a {
   text-decoration: none;
   color: white;
