@@ -20,7 +20,7 @@ a {
   .navbar {
     display: flex;
     border: 2px outset lighten(@chefRed, 8);
-  }
+  
   .nav-logo {
     width: 75%;
     display: flex;
@@ -29,36 +29,31 @@ a {
       padding-left: 0px;
     }
     .chefIcon {
-        width:64px;
-        height:64px;
-        margin-top:5px;
+      width: 64px;
+      height: 64px;
+      margin-top: 5px;
     }
-    .nav-links{
-       
-        
-        justify-content: space-around;
-    
-        align-self: center;
-        display: flex;
-        width: 30%;
-        
-        .nav-hamburger{
-            
-            transform: rotate(90deg);
-            
-            #stick{
-                
-                padding: 2px;
-                font-size: 1.5rem;
-                font-weight: bold;
-            }
-            display: none;
-        }
-       
-    }
-    a:hover{
-        cursor: pointer;
+  }
+    .nav-links {
+      justify-content: space-around;
 
+      align-self: center;
+      display: flex;
+      width: 30%;
+
+      .nav-hamburger {
+        transform: rotate(90deg);
+
+        #stick {
+          padding: 2px;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        display: none;
+      }
+    }
+    a:hover {
+      cursor: pointer;
     }
   }
   a:hover {
