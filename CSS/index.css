@@ -43,7 +43,6 @@
 .icons {
   display: flex;
   justify-content: space-between;
-  width: 40px;
   margin: 10px;
   padding-left: 10px;
 }
@@ -52,6 +51,12 @@
   margin-left: 10px;
   width: 30px;
   height: 30px;
+}
+@media screen and (max-width: 500px) {
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
 }
 a {
   text-decoration: none;
@@ -84,9 +89,9 @@ a {
   padding-left: 0px;
 }
 .container-nav .navbar .nav-logo .chefIcon {
-  width: 64px;
-  height: 64px;
-  margin-top: 5px;
+  width: 48px;
+  height: 48px;
+  margin-top: 10px;
 }
 .container-nav .navbar .nav-links {
   justify-content: space-around;
