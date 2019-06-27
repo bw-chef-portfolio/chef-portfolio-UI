@@ -1,1 +1,3 @@
-# chef-portfolio-UI
+# Chef-portfolio-UI
+
+## Project Overview
