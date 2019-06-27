@@ -35,10 +35,10 @@
   margin: auto;
   color: black;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
   text-align: center;
-  z-index: 1;
+  z-index: 0;
 }
 .icons {
   display: flex;
@@ -76,32 +76,35 @@ a {
   display: flex;
   border: 2px outset #f96262;
 }
-.container-nav .nav-logo {
+.container-nav .navbar .nav-logo {
   width: 75%;
   display: flex;
 }
-.container-nav .nav-logo h1 {
+.container-nav .navbar .nav-logo h1 {
   padding-left: 0px;
 }
-.container-nav .chefIcon {
+.container-nav .navbar .nav-logo .chefIcon {
   width: 64px;
   height: 64px;
   margin-top: 5px;
 }
-.container-nav .nav-links {
+.container-nav .navbar .nav-links {
   justify-content: space-around;
   align-self: center;
   display: flex;
   width: 30%;
 }
-.container-nav .nav-links .nav-hamburger {
+.container-nav .navbar .nav-links .nav-hamburger {
   transform: rotate(90deg);
   display: none;
 }
-.container-nav .nav-links .nav-hamburger #stick {
+.container-nav .navbar .nav-links .nav-hamburger #stick {
   padding: 2px;
   font-size: 1.5rem;
   font-weight: bold;
+}
+.container-nav .navbar a:hover {
+  cursor: pointer;
 }
 .container-nav a:hover {
   cursor: pointer;
