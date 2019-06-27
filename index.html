@@ -1,146 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./CSS/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body class="bodyImage">
-    <!------------------NavBar ------------------>
-    <div class="container-nav">
-      <nav class="navbar">
-        <div class="nav-logo">
-          <a href="./index.html"><h1>ChefPortfolio</h1></a>
-        </div>
-        <div class="nav-links">
-          <a href="./about.html">About</a>
-          <a href="./meetUs.html">Meet Us</a>
-          <a href="#" class="nav-log-in">Log In</a>
 
-          <span class="nav-hamburger"
-            ><span id="stick">|</span><span id="stick">|</span
-            ><span id="stick">|</span></span
-          >
-        </div>
-      </nav>
-      <!-- shows on mobile -->
-      <div class="nav-hamburger-clicked navt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body class="bodyImage">
+  <!------------------NavBar ------------------>
+  <div class="container-nav">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="./index.html">
+          <h1>ChefPortfolio</h1>
+        </a>
+      </div>
+      <div class="nav-links">
         <a href="./about.html">About</a>
-
         <a href="./meetUs.html">Meet Us</a>
+        <a href="#" class="nav-log-in">Log In</a>
 
-        <a href="#" class="nav-log-in">Log in</a>
+        <span class="nav-hamburger"><span id="stick">|</span><span id="stick">|</span><span id="stick">|</span></span>
       </div>
+    </nav>
+    <!-- shows on mobile -->
+    <div class="nav-hamburger-clicked navt">
+      <a href="./about.html">About</a>
+
+      <a href="./meetUs.html">Meet Us</a>
+
+      <a href="#" class="nav-log-in">Log in</a>
     </div>
-    <!-- carousel images------------------------------------->
-    <div class="carousel">
-      <div class="carousel-images">
-        <img
-          class="carousel-img"
-          src="./assets/carousel-images/example1.jpeg"
-          alt=""
-          data-tab="1"
-        />
-      </div>
-
-      <div class="carousel-images">
-        <img
-          class="carousel-img"
-          src="./assets/carousel-images/example2.jpeg"
-          alt=""
-          data-tab="2"
-        />
-      </div>
-
-      <div class="carousel-images">
-        <img
-          class="carousel-img"
-          src="./assets/carousel-images/example3.jpeg"
-          alt=""
-          data-tab="3"
-        />
-      </div>
-      <div class="carousel-images">
-        <img
-          class="carousel-img"
-          src="./assets/carousel-images/example4.jpeg"
-          alt=""
-          data-tab="4"
-        />
-      </div>
-
-      <div class="carousel-images">
-        <img
-          class="carousel-img"
-          src="./assets/carousel-images/example5.jpeg"
-          alt=""
-          data-tab="5"
-        />
-      </div>
-
-      <div class="carousel-images">
-        <img
-          class="carousel-img"
-          src="./assets/carousel-images/example6.jpeg"
-          alt=""
-          data-tab="6"
-        />
-      </div>
-
-      <div class="carousel-images">
-        <img
-          class="carousel-img"
-          src="./assets/carousel-images/example7.jpeg"
-          alt=""
-          data-tab="7"
-        />
-      </div>
-    </div>
-    <!------------ About info--------------------->
-    <div class="landing-page-info">
-      <p>
-          Are you a Chef? Not a chef but looking for one? You've come to the right place!
-          ChefPortfolio is all about connecting chefs with people who love food. You'll find way more than just photos here, though there's plenty of those, too.
-          Browse images, recipes, and profiles from chefs you already love, and find new
-          ones to appreciate as well!  ChefPortfolio is THE place for chefs to connect with 
-          their audience.
-      </p>
+  </div>
+  <!-- carousel images------------------------------------->
+  <div class="carousel">
+    <div class="carousel-images">
+      <img class="carousel-img" src="./assets/carousel-images/example1.jpeg" alt="" data-tab="1" />
     </div>
 
-    <!------------ Sign in/browse button--------------------->
-    <div class="frontEndLink">
-      <h2>Sign in or Browse below!</h2>
-      <div class="buttonsLogin">
-        <a href="https://chef-portfolio-bw.netlify.com/" class="button"
-          >Sign Up</a
-        >
-        <a href="https://chef-portfolio-bw.netlify.com/recipes" class="button">Browse</a>
-        <!-- <button class = "sign-in" >Sign In</button> -->
-        <!-- <button>Browse</button> -->
-      </div>
+    <div class="carousel-images">
+      <img class="carousel-img" src="./assets/carousel-images/example2.jpeg" alt="" data-tab="2" />
     </div>
-    <!------------------Javascript Scripts ------------------>
-    <script src="./javascript/carousel.js" async></script>
-    <script type="text/javascript" src="./javascript/nav.js"></script>
-    <script type="text/javascript" src="./javascript/index.js"></script>
 
-    <!------------------Footer Nav Bar ------------------>
-    <div class="container-btm">
-      <footer class="container-btm-inner">
+    <div class="carousel-images">
+      <img class="carousel-img" src="./assets/carousel-images/example3.jpeg" alt="" data-tab="3" />
+    </div>
+    <div class="carousel-images">
+      <img class="carousel-img" src="./assets/carousel-images/example4.jpeg" alt="" data-tab="4" />
+    </div>
+
+    <div class="carousel-images">
+      <img class="carousel-img" src="./assets/carousel-images/example5.jpeg" alt="" data-tab="5" />
+    </div>
+    <div class="carousel-images">
+      <img class="carousel-img" src="./assets/carousel-images/example6.jpeg" alt="" data-tab="6" />
+    </div>
+    <div class="carousel-images">
+      <img class="carousel-img" src="./assets/carousel-images/example7.jpeg" alt="" data-tab="7" />
+    </div>
+  </div>
+  <!------------ About info--------------------->
+  <div class="landing-page-info">
+    <p>
+      Are you a Chef? Not a chef but looking for one? You've come to the right place!
+      ChefPortfolio is all about connecting chefs with people who love food. You'll find way more than just photos
+      here,
+      though there's plenty of those, too.
+      Browse images, recipes, and profiles from chefs you already love, and find new
+      ones to appreciate as well! ChefPortfolio is THE place for chefs to connect with
+      their audience.
+    </p>
+  </div>
+  <!--REVIEWS-->
+  <div class="reviews">
+    <div class="reviewer">
+      <img class="review-image" src="assets/People Pictures/chefhat.png" alt="picture of a reviewer">
+      <h3 class="review-name n1">Robert, T</h3>
+      <p class="review-text t1">This website has gotten me where i needed to be i haved gained tons of followers</p>
+    </div>
+
+    <div class="reviewer">
+      <img class="review-image" src="assets/People Pictures/chefhat.png" picture of a reviewer">
+      <h3 class="review-name n2">Gordan, R</h3>
+      <p class="review-text t2">"Amazing Food Amazing People"</p>
+    </div>
+
+    <div class="reviewer">
+      <img class="review-image" src="assets/People Pictures/chefhat.png" alt="picture of a reviewer">
+      <h3 class="review-name n3">Martha, S</h3>
+      <p class="review-text t1">I found Great Ideas on this Website</p>
+    </div>
+
+  </div>
+
+  <!------------ Sign in/browse button--------------------->
+  <div class="frontEndLink">
+    <h2>Sign in or Browse below!</h2>
+    <div class="buttonsLogin">
+      <a href="https://chef-portfolio-bw.netlify.com/" class="button">Sign Up</a>
+      <a href="https://chef-portfolio-bw.netlify.com/recipes" class="button">Browse</a>
+      <!-- <button class = "sign-in" >Sign In</button> -->
+      <!-- <button>Browse</button> -->
+    </div>
+  </div>
+  <!------------------Javascript Scripts ------------------>
+  <script src="./javascript/carousel.js" async></script>
+  <script type="text/javascript" src="./javascript/nav.js"></script>
+  <script type="text/javascript" src="./javascript/index.js"></script>
+  <script type="text/javascript" src="./javascript/rand-review.js"></script>
+
+  <!------------------Footer Nav Bar ------------------>
+  <div class="container-btm">
+    <footer class="container-btm-inner">
       <h5>Copyright 2019 Chef Portfolio Dev Team</h5>
       <div class="icons">
-  <img src="assets/Icons/facebook.png">
-      <img src="assets/Icons/Linked-In.png">
-      <img src="assets/Icons/Instagram.png">
-</div>
-</footer>  
+        <img src="assets/Icons/facebook.png">
+        <img src="assets/Icons/Linked-In.png">
+        <img src="assets/Icons/Instagram.png">
+      </div>
+    </footer>
 
-</div>
+  </div>
 </body>
+
 </html>
