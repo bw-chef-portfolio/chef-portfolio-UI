@@ -30,6 +30,16 @@
   bottom: 0;
   width: 100%;
 }
+.container-btm-about {
+  background-color: #fab384;
+  margin: auto;
+  color: black;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
 .icons {
   display: flex;
   justify-content: space-around;
@@ -130,6 +140,7 @@ body {
 @media (max-width: 720px) {
   .meetUsPage {
     background-image: none;
+    background-color: #f2e9d4;
   }
 }
 .meet-us {
