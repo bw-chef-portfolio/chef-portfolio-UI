@@ -592,6 +592,41 @@ body {
   position: none;
   object-fit: cover;
 }
+.head {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.container-btm-contact {
+  background-color: #fab384;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 15px;
+  color: black;
+  bottom: 0;
+  width: 100%;
+  margin-top: 450px;
+}
+.container-btm-contact .container-btm-inner-contact {
+  bottom: 0;
+  background-color: #fab384;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mediaIcons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding-left: 10px;
+}
+.mediaIcons img {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
 * {
   box-sizing: border-box;
 }
