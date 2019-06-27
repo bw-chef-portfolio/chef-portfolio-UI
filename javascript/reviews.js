@@ -1,7 +1,7 @@
 const reviewers = [
     {"name":"John, D","review":"\"Yummers! Everything was just so yummy. This was one chef made the best mouth-watering burgers I've had grace my taste buds in a long time.\""},
     {"name":"Tom, C","review":"\"Best experience ever!\""},
-    {"name":"jerry, M","review":"\"The Chef i hired made amazing New York Style Pizza\""},
+    {"name":"Jerry, M","review":"\"The Chef I hired made amazing New York Style Pizza\""},
     {"name":"Chef Ryan","review":"\"I love Cooking this website has made my followers grow!\""},
     {"name":"Betty, A","review":"\"It was much better than I expected.\""},
     {"name":"Luis, C","review":"\"My taste buds are still tingling\""},
