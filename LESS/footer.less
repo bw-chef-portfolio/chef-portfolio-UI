@@ -36,15 +36,39 @@
 
   .container-btm-about {
     background-color: lighten(@chefYellow, 15);
-    margin:auto;
-    color:black;
-    bottom:0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    z-index: 0;
-   
+     
+        display:flex;
+        justify-content:center;
+        padding:0px;
+        margin-top:15px;
+        color:black;
+        bottom:0;
+        width: 100%; 
+        margin-top: 450px;
+        
+        .container-btm-inner-about {
+          bottom: 0;
+          background-color: lighten(@chefYellow, 15);
+          width: 100%; 
+          display:flex;
+          justify-content:center;
+         }  
+
   }
+  // .container-btm-about {
+  //   background-color: lighten(@chefYellow, 15);
+  //   margin:0;
+  //   color:black;
+  //   bottom:0;
+  //   position: absolute;
+  //   margin-top: 50px;
+  //   width: 100%;
+  //   z-index: -1;
+  //   display:flex;
+  //   justify-content:center;
+  //   align-items: flex-end;
+   
+  // }
 
   .icons {
     display:flex;
