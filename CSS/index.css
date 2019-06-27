@@ -39,7 +39,7 @@
   color: black;
   bottom: 0;
   width: 100%;
-  margin-top: 450px;
+  margin-top: 424px;
 }
 .container-btm-about .container-btm-inner-about {
   bottom: 0;
@@ -79,7 +79,7 @@ a {
   background-color: #f73b3b;
 }
 .container-nav .nav-hamburger-clicked {
-  height: 120px;
+  height: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -309,6 +309,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  object-fit: cover;
   display: flex;
   align-content: flex-end;
   padding: 10px;
