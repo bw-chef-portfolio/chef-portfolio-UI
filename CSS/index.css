@@ -230,7 +230,7 @@ body {
   .meet-us .panel .panel-bar {
     flex-direction: column;
     align-content: space-evenly;
-    height: 80px;
+    height: 100px;
   }
 }
 .meet-us .panel .panel-bar h3 {
