@@ -18,13 +18,17 @@ The goals of the project are as followed.
 ## Who is all involved:
 
 1 Team Leader
+
 3 UI Developers
+
 2 Front End Developers
+
 1 Back End Developer
 
 ## How can I access the project: 
 
 UI site: https://bw-chef-portfolio.netlify.com/
+
 Front End/ Back End direct section: https://chef-portfolio-bw.netlify.com/
 
 ## UI Developer Contribution:
@@ -35,10 +39,11 @@ Front End/ Back End direct section: https://chef-portfolio-bw.netlify.com/
 4. Contact Page
 
 **As well as having the UI site link to the Front-End site
+
 **Created with HTML, CSS, JavaScript, LESS, and GSAP.
 
 ## Each Page:
-1. Navigation Bar
+1. Navigation Bar 
 2. Footer
 
 ## Landing Page: 
@@ -60,6 +65,75 @@ A contact page with a form that can allows users/clients to be able to contact C
 ## Front End and Back End have separate ReadMe files with more information about their contributions.
 
 ## Chef Portfolio Tree :
+```
+├── CSS 
+│   └── index.css
+├── LESS
+│   ├── LoginConnectImage
+│   │   └── signinbuttonimg.jpeg
+│   ├── about.less
+│   ├── carousel.less
+│   ├── contact.less
+│   ├── footer.less
+│   ├── index.less
+│   ├── landingpage.less
+│   ├── meetUs.less
+│   ├── mixins.less
+│   ├── navbar.less
+│   └── variable.less
+├── LICENSE
+├── README.md
+├── about.html
+├── assets
+│   ├── About-images
+│   │   ├── cutting-board.jpg
+│   │   └── eggs.jpg
+│   ├── Background-images
+│   │   ├── button-mobile.png
+│   │   ├── button.jpeg
+│   │   ├── landingpageimage.jpeg
+│   │   └── lobster.jpg
+│   ├── Icons
+│   │   ├── Instagram.png
+│   │   ├── Linked-In.png
+│   │   ├── chef.png
+│   │   └── facebook.png
+│   ├── LoginConnectImage
+│   │   ├── signinbuttonimg.jpeg
+│   │   └── signinbuttonunedited.jpeg
+│   ├── People\ Pictures
+│   │   ├── Carla.png
+│   │   ├── Danny.png
+│   │   ├── Jacob.png
+│   │   ├── Seth.png
+│   │   ├── chefhat.png
+│   │   ├── christopher.png
+│   │   ├── dan.jpg
+│   │   └── nate.png
+│   ├── carousel-images
+│   │   ├── example1.jpeg
+│   │   ├── example2.jpeg
+│   │   ├── example3.jpeg
+│   │   ├── example4.jpeg
+│   │   ├── example5.jpeg
+│   │   ├── example6.jpeg
+│   │   └── example7.jpeg
+│   └── tree.png
+├── contact.html
+├── favicon.ico
+├── index.html
+├── javascript
+│   ├── about.js
+│   ├── carousel.js
+│   ├── index.js
+│   ├── meetUs.js
+│   ├── nav.js
+│   └── reviews.js
+├── meetUs.html
+└── package.json
+```
+
+
 
 [Image of the Root Tree](assets/tree.png);
 
