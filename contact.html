@@ -10,7 +10,8 @@
 
     <title>Contact</title>
 </head>
-<body>
+<body class="contactPage">
+
     
 <!------------------NavBar ------------------>
 <div class="container-nav">
@@ -40,9 +41,20 @@
           
         </div>
       </div>
-<h1>
-<div class="head">Contact</h1>
+<div class="head"><h1>Contact</h1>
+
 </div>
+<br>
+<br>
+<div class="form">
+        <form method="POST" action="https://formspree.io/chefportfolioteam@gmail.com">
+            <input type="email" name="email" placeholder="Your email">
+            <br>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+</div>
+
 <!------------------Footer Nav Bar ------------------>
   <div class="container-btm-contact">
     <footer class="container-btm-inner-contact">
@@ -55,5 +67,6 @@
     </footer>
 
   </div>
+  <script type="text/javascript" src="./javascript/nav.js"></script>
 </body>
 </html>
