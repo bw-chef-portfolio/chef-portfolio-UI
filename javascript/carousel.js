@@ -1,13 +1,6 @@
-
-
-
 class Carousel {
   constructor(element) {
     this.element = element;
-    // this.data = this.element.dataset.tab;
-    // this.itemElement = document.querySelector(
-    //   `.click-content[data-tab= '${this.data}]`
-    // );
     this.imagesSlide = document.querySelector(".carousel-images");
     this.imagesOne = document.querySelectorAll(".carousel-img");
     this.imagesOneSingle = document.querySelector(".carousel-img");
@@ -18,11 +11,12 @@ class Carousel {
   change() {
     const images = document.querySelectorAll(".carousel-img");
     const newImagesArray = [];
-    images.forEach(image => {
+    Array.from(images).map(image => {
       image.style.display = "none";
       newImagesArray.push(image);
       return this.currentIndex;
     });
+
     this.timerStart();
 
     if (this.currentIndex == newImagesArray.length) {
@@ -39,5 +33,3 @@ class Carousel {
 }
 
 let carousel = document.querySelectorAll(".carousel-img").forEach(img => new Carousel(img));
-
-  

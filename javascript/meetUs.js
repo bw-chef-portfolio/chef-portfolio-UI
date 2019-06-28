@@ -2,8 +2,8 @@ class Person {
   constructor(element) {
     this.element = element;
     this.openButton = element.querySelector(".panel-button-open");
-    this.panelBar = element.querySelector('.panel-bar');
-    this.panel = element.querySelector('.panel');
+    this.panelBar = element.querySelector(".panel-bar");
+    this.panel = element.querySelector(".panel");
     this.closeButton = element.querySelector(".panel-button-close");
     this.panelContent = element.querySelector(".panel-content");
     this.showContent = element.querySelector(".showContent");
@@ -12,36 +12,19 @@ class Person {
     this.openButton.addEventListener("click", () => {
       this.panelOpen();
       TweenMax.to(".panel", 1, { y: 100 });
-
     });
 
     this.closeButton.addEventListener("click", () => {
       this.panelOpen();
       TweenMax.to(".panel", 1, { y: 0 });
-
     });
-      
-    
-    // this.closeButton.addEventListener("click", () => {
-    //   this.buttonChange()
-    //   TweenMax.to(".panel", 1, { y: 0 });
-
-    // });
-      
-    };
-  
-  panelOpen() {
-    this.panelContent.classList.toggle("showContent")
-    this.closeButton.classList.toggle("hide-button");
-    this.openButton.classList.toggle("hide-button");
-    
   }
 
-
-  // marginShift() {
-  //   this.footer.classList.toggle("marginAdded")
-  // }
-
+  panelOpen() {
+    this.panelContent.classList.toggle("showContent");
+    this.closeButton.classList.toggle("hide-button");
+    this.openButton.classList.toggle("hide-button");
+  }
 }
 
 const together = document.querySelectorAll(".panel");
@@ -52,7 +35,7 @@ together.forEach(panel => new Person(panel));
 ///Linkedin hover////
 let linkedinIcon = document.querySelectorAll(".linkedin-icon");
 
-linkedinIcon.forEach(icon => {
+Array.from(linkedinIcon).map(icon => {
   icon.addEventListener("mouseover", event => {
     icon.src = "https://img.icons8.com/nolan/90/000000/linkedin.png";
   });
@@ -66,7 +49,7 @@ linkedinIcon.forEach(icon => {
 ///Github hover////
 let githubIcon = document.querySelectorAll(".github-icon");
 
-githubIcon.forEach(icon => {
+Array.from(githubIcon).map(icon => {
   icon.addEventListener("mouseover", event => {
     icon.src = "https://img.icons8.com/nolan/90/000000/github.png";
   });
@@ -78,7 +61,7 @@ githubIcon.forEach(icon => {
 ///Down Arrow hover////
 let downIcon = document.querySelectorAll(".panel-button-open");
 
-downIcon.forEach(icon => {
+Array.from(downIcon).map(icon => {
   icon.addEventListener("mouseover", event => {
     icon.src = "https://img.icons8.com/nolan/64/000000/down.png";
   });
@@ -88,9 +71,10 @@ downIcon.forEach(icon => {
   });
 });
 
+///Up Arrow Hover///
 let upIcon = document.querySelectorAll(".panel-button-close");
 
-upIcon.forEach(icon => {
+Array.from(upIcon).map(icon => {
   icon.addEventListener("mouseover", event => {
     icon.src = "https://img.icons8.com/nolan/64/000000/left-up2.png";
   });
