@@ -149,6 +149,20 @@ a {
     width: 70%;
   }
 }
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .carousel-img {
+  width: 100%;
+  position: none;
+  object-fit: cover;
+}
 body {
   background-color: seashell;
 }
@@ -210,6 +224,7 @@ body {
   justify-content: space-around;
   height: 50px;
   width: 100%;
+  margin: auto;
 }
 @media (max-width: 720px) {
   .meet-us .panel .panel-bar {
@@ -223,6 +238,7 @@ body {
   display: flex;
   align-self: center;
   font-weight: bolder;
+  padding-bottom: 10px;
 }
 @media (max-width: 1000px) {
   .meet-us .panel .panel-bar h3 {
@@ -250,6 +266,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    padding-top: 10px;
   }
 }
 .meet-us .panel .panel-bar .panel-buttons .button {
@@ -579,19 +596,6 @@ body {
   h1 {
     font-size: 10px;
   }
-}
-.carousel {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.carousel .carousel-img {
-  width: 100%;
-  position: none;
-  object-fit: cover;
 }
 .head {
   display: flex;
