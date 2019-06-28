@@ -61,6 +61,7 @@ A contact page with a form that can allows users/clients to be able to contact C
 
 ## Chef Portfolio Tree :
 
+[Image of the Root Tree](assets/tree.png);
 
 ## Credit: 
 
