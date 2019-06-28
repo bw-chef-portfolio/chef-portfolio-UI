@@ -1,3 +1,6 @@
+
+
+
 class Carousel {
   constructor(element) {
     this.element = element;
@@ -35,7 +38,5 @@ class Carousel {
   }
 }
 
-let carousel = document
-  .querySelectorAll(".carousel-img")
-  .forEach(img => new Carousel(img));
+let carousel = document.querySelectorAll(".carousel-img").forEach(img => new Carousel(img));
 
