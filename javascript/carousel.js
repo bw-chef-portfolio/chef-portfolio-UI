@@ -4,10 +4,10 @@
 class Carousel {
   constructor(element) {
     this.element = element;
-    this.data = this.element.dataset.tab;
-    this.itemElement = document.querySelector(
-      `.click-content[data-tab= '${this.data}]`
-    );
+    // this.data = this.element.dataset.tab;
+    // this.itemElement = document.querySelector(
+    //   `.click-content[data-tab= '${this.data}]`
+    // );
     this.imagesSlide = document.querySelector(".carousel-images");
     this.imagesOne = document.querySelectorAll(".carousel-img");
     this.imagesOneSingle = document.querySelector(".carousel-img");
