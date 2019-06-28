@@ -43,7 +43,7 @@ Front End/ Back End direct section: https://chef-portfolio-bw.netlify.com/
 **Created with HTML, CSS, JavaScript, LESS, and GSAP.
 
 ## Each Page:
-1. Navigation Bar
+1. Navigation Bar 
 2. Footer
 
 ## Landing Page: 
