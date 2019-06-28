@@ -40,3 +40,4 @@ class Carousel {
 
 let carousel = document.querySelectorAll(".carousel-img").forEach(img => new Carousel(img));
 
+  
