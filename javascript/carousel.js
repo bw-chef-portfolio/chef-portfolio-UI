@@ -26,7 +26,7 @@ class Carousel {
       this.currentIndex = 0;
     }
 
-    newImagesArray[this.currentIndex].style.display = "block";
+    newImagesArray[this.currentIndex].style.display = "flex";
     this.currentIndex += 1;
   }
 
@@ -36,6 +36,6 @@ class Carousel {
 }
 
 let carousel = document
-  .querySelectorAll(".carousel-images")
+  .querySelectorAll(".carousel-img")
   .forEach(img => new Carousel(img));
 
